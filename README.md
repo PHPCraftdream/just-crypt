@@ -39,6 +39,12 @@ const plaintext = await decrypt('password', blob);
 
 `encrypt` returns a base64 string. `decrypt` throws when the password is wrong or the data is malformed or tampered with.
 
+## Security notes
+
+The CLI accepts the password as a command-line argument, which may be visible in shell history or process listings. Use the library API when that exposure is unacceptable.
+
+The format is intended for password-based string encryption. It does not provide password recovery, key rotation, or secure password prompting.
+
 ## Performance
 
 Key derivation uses 1 GiB of memory and encryption performs 999 inner AES-256-CTR rounds. These parameters are part of the format and make each operation intentionally resource-intensive.
