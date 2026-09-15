@@ -1,0 +1,39 @@
+{
+  "name": "just-crypt",
+  "version": "1.0.0",
+  "description": "CLI: encrypt/decrypt a string with a password. Argon2id key derivation + 999 rounds of AES-256-CTR + a final AES-256-GCM authentication layer.",
+  "license": "MIT OR Apache-2.0",
+  "author": "Marat K",
+  "keywords": [
+    "aes",
+    "argon2",
+    "cli",
+    "cryptography",
+    "encryption"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "index.js",
+    "README.md",
+    "LICENSE",
+    "LICENSE-APACHE"
+  ],
+  "bin": {
+    "just-crypt": "bin/just-crypt.js",
+    "just-decrypt": "bin/just-decrypt.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "hash-wasm": "^4.11.0"
+  }
+}
