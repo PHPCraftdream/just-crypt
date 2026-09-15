@@ -1,5 +1,10 @@
 # just-crypt
 
+[![CI](https://github.com/PHPCraftdream/just-crypt/actions/workflows/ci.yml/badge.svg)](https://github.com/PHPCraftdream/just-crypt/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/just-crypt.svg)](https://www.npmjs.com/package/just-crypt)
+[![npm downloads](https://img.shields.io/npm/dm/just-crypt.svg)](https://www.npmjs.com/package/just-crypt)
+[![License: MIT OR Apache-2.0](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](#license)
+
 Small Node.js CLI and library for encrypting and decrypting strings with a password.
 
 The format derives a 32-byte key with Argon2id, applies 999 rounds of AES-256-CTR, and protects the result with AES-256-GCM. Every encryption generates a fresh salt and IV.
@@ -40,7 +45,9 @@ Key derivation uses 1 GiB of memory and encryption performs 999 inner AES-256-CT
 
 ## License
 
-Licensed under either of:
+This project is dual-licensed. You may choose either license:
 
 - Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE))
 - MIT License ([LICENSE](LICENSE))
+
+SPDX-License-Identifier: MIT OR Apache-2.0
